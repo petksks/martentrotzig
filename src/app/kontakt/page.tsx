@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 
+const PREFIX = '/martentrotzig';
+
 export const metadata: Metadata = {
   title: 'Kontakta Oss',
   description: 'Kontakta Mårten Trotzig för bokningar och frågor. Ring 08-442 25 30 eller maila booking@martentrotzig.se. Västerlånggatan 79, Gamla Stan.',
@@ -11,7 +13,7 @@ export default function KontaktPage() {
       {/* Hero */}
       <section className="hero hero-small">
         <div className="hero-bg">
-          <img src="/images/DSC00552.jpg" alt="Kungliga matsalen" />
+          <img src={`${PREFIX}/images/DSC00552.jpg`} alt="Kungliga matsalen" />
         </div>
         <div className="hero-overlay" />
         <div className="hero-content">

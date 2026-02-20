@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+const PREFIX = '/martentrotzig';
+
 export const metadata: Metadata = {
   title: 'Om Oss – Mårten Trotzig Restaurant i Gamla Stan',
   description: 'Upptäck Mårten Trotzigs historia i hjärtat av Gamla Stan. Svensk matkultur med lokala råvaror i historisk miljö. Boka bord idag!',
@@ -12,7 +14,7 @@ export default function OmOssPage() {
       {/* Hero */}
       <section className="hero hero-small">
         <div className="hero-bg">
-          <img src="/images/DSC00447.webp" alt="Mårten Trotzig interiör" />
+          <img src={`${PREFIX}/images/DSC00447.webp`} alt="M&#229;rten Trotzig interi&#246;r" />
         </div>
         <div className="hero-overlay" />
         <div className="hero-content">
@@ -39,8 +41,8 @@ export default function OmOssPage() {
           </div>
           <img
             className="about-image"
-            src="/images/DSC00030.webp"
-            alt="Mårten Trotzig restaurang utifrån"
+            src={`${PREFIX}/images/DSC00030.webp`}
+            alt="M&#229;rten Trotzig restaurang utifr&#229;n"
             loading="lazy"
           />
         </div>
@@ -66,7 +68,7 @@ export default function OmOssPage() {
                 <Link href="/meny">&#9776; Menyf&ouml;rslag</Link>
               </div>
             </div>
-            <img src="/images/DSC00378-HDR.webp" alt="Dessert" loading="lazy" />
+            <img src={`${PREFIX}/images/DSC00378-HDR.webp`} alt="Dessert" loading="lazy" />
           </div>
         </div>
       </section>
@@ -75,7 +77,7 @@ export default function OmOssPage() {
       <section className="section">
         <div className="container">
           <div className="two-col">
-            <img src="/images/DSC00582.webp" alt="Restaurang atmosfär" loading="lazy" />
+            <img src={`${PREFIX}/images/DSC00582.webp`} alt="Restaurang atmosf&#228;r" loading="lazy" />
             <div className="two-col-text">
               <h2>Atmosf&auml;ren</h2>
               <p>

@@ -3,46 +3,47 @@
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
 
+const PREFIX = '/martentrotzig';
 const BOOKING_URL = 'https://www.thefork.se/restaurang/marten-trotzig-r58292#booking=';
 
 const slides = [
-  { name: 'Kungliga matsalen', image: '/images/DSC00552.jpg' },
-  { name: 'Festvåning', image: '/images/squoosh-matsalen-med-vita-tapeter.jpg' },
-  { name: 'Vinterträdgård', image: '/images/DSC00422.webp' },
-  { name: '1600-tals Valv', image: '/images/DSC00437.webp' },
-  { name: 'Matsal', image: '/images/DSC00582.webp' },
-  { name: "Trotzig's Bar", image: '/images/DSC00497.webp' },
+  { name: 'Kungliga matsalen', image: `${PREFIX}/images/DSC00552.jpg` },
+  { name: 'Festvåning', image: `${PREFIX}/images/squoosh-matsalen-med-vita-tapeter.jpg` },
+  { name: 'Vinterträdgård', image: `${PREFIX}/images/DSC00422.webp` },
+  { name: '1600-tals Valv', image: `${PREFIX}/images/DSC00437.webp` },
+  { name: 'Matsal', image: `${PREFIX}/images/DSC00582.webp` },
+  { name: "Trotzig's Bar", image: `${PREFIX}/images/DSC00497.webp` },
 ];
 
 const rooms = [
   {
     name: 'Kungliga matsalen',
-    image: '/images/DSC00552.jpg',
+    image: `${PREFIX}/images/DSC00552.jpg`,
     desc: 'För exklusiva middagar och firanden i en anrik och elegant miljö. En oförglömlig upplevelse väntar. Max 20 personer.',
   },
   {
     name: 'Festvåning',
-    image: '/images/squoosh-matsalen-med-vita-tapeter.jpg',
+    image: `${PREFIX}/images/squoosh-matsalen-med-vita-tapeter.jpg`,
     desc: 'Planera er nästa fest eller event i vår stämningsfulla festvåning med anor från medeltiden. Max 35 personer.',
   },
   {
     name: 'Vinterträdgård',
-    image: '/images/DSC00422.webp',
+    image: `${PREFIX}/images/DSC00422.webp`,
     desc: 'I vår ljusa Vinterträdgård äter ni gott under vackra stenvalv. En rofylld och unik oas året runt.',
   },
   {
     name: '1600-tals Valv',
-    image: '/images/DSC00437.webp',
+    image: `${PREFIX}/images/DSC00437.webp`,
     desc: 'Upplev historiens vingslag i vårt unika 1600-tals valv. En intim miljö för en oförglömlig kväll i stockholms mest unika chambre séparée. Max 26 personer.',
   },
   {
     name: 'Det Vita Valvet',
-    image: '/images/DSC00447.webp',
+    image: `${PREFIX}/images/DSC00447.webp`,
     desc: 'Njut av en middag i vår mysiga matsal. De vitkalkade väggarna och rustika känslan skapar en varm miljö. Max 10 personer.',
   },
   {
     name: "Trotzig's Bar",
-    image: '/images/DSC00497.webp',
+    image: `${PREFIX}/images/DSC00497.webp`,
     desc: 'Koppla av med en god drink i vår genuina bar. Den självklara och livfulla mötesplatsen i Gamla Stan.',
   },
 ];

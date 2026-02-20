@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 
+const PREFIX = '/martentrotzig';
+
 export const metadata: Metadata = {
   title: 'Meny',
   description:
@@ -115,7 +117,7 @@ export default function MenyPage() {
       {/* Hero */}
       <section className="hero hero-small">
         <div className="hero-bg">
-          <img src="/images/DSC00378-HDR.webp" alt="Meny - Restaurang M&aring;rten Trotzig" />
+          <img src={`${PREFIX}/images/DSC00378-HDR.webp`} alt="Meny - Restaurang M&#229;rten Trotzig" />
         </div>
         <div className="hero-overlay" />
         <div className="hero-content">

@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   },
   description: 'Välkommen till Mårten Trotzig i Gamla Stan. Njut av vällagad mat i historisk miljö med noga utvalda viner. Boka bord och upplev Stockholm.',
   icons: {
-    icon: '/images/favicon.jpg',
-    apple: '/images/webclip.jpg',
+    icon: '/martentrotzig/images/favicon.jpg',
+    apple: '/martentrotzig/images/webclip.jpg',
   },
 };
 

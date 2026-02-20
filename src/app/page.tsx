@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+const PREFIX = '/martentrotzig';
 const BOOKING_URL = 'https://www.thefork.se/restaurang/marten-trotzig-r58292#booking=';
 
 const galleryRow1 = [
@@ -17,7 +18,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-bg">
-          <img src="/images/DSC00020-1.webp" alt="Restaurang Mårten Trotzig interiör" />
+          <img src={`${PREFIX}/images/DSC00020-1.webp`} alt="Restaurang M&#229;rten Trotzig interi&#246;r" />
         </div>
         <div className="hero-overlay" />
         <div className="hero-content">
@@ -41,12 +42,12 @@ export default function HomePage() {
       <section className="gallery-section">
         <div className="gallery-row">
           {[...galleryRow1, ...galleryRow1].map((img, i) => (
-            <img key={`r1-${i}`} src={`/images/${img}`} alt="Mat från Mårten Trotzig" loading="lazy" />
+            <img key={`r1-${i}`} src={`${PREFIX}/images/${img}`} alt="Mat fr&#229;n M&#229;rten Trotzig" loading="lazy" />
           ))}
         </div>
         <div className="gallery-row reverse" style={{ marginTop: '0.5rem' }}>
           {[...galleryRow2, ...galleryRow2].map((img, i) => (
-            <img key={`r2-${i}`} src={`/images/${img}`} alt="Mat från Mårten Trotzig" loading="lazy" />
+            <img key={`r2-${i}`} src={`${PREFIX}/images/${img}`} alt="Mat fr&#229;n M&#229;rten Trotzig" loading="lazy" />
           ))}
         </div>
       </section>
@@ -55,7 +56,7 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className="two-col">
-            <img src="/images/DSC00552.jpg" alt="Kungliga matsalen" loading="lazy" />
+            <img src={`${PREFIX}/images/DSC00552.jpg`} alt="Kungliga matsalen" loading="lazy" />
             <div className="two-col-text">
               <h2>Grupper &amp; Evenemang</h2>
               <p>
@@ -70,7 +71,7 @@ export default function HomePage() {
 
       {/* Våra Menyer */}
       <section className="three-col-cta">
-        <img className="side-img" src="/images/DSC00264.webp" alt="Mat" loading="lazy" />
+        <img className="side-img" src={`${PREFIX}/images/DSC00264.webp`} alt="Mat" loading="lazy" />
         <div className="center-content">
           <h2>V&aring;ra Menyer</h2>
           <p>
@@ -80,13 +81,13 @@ export default function HomePage() {
           </p>
           <Link href="/meny" className="btn-outline">A La Carte</Link>
         </div>
-        <img className="side-img" src="/images/DSC00352-HDR.webp" alt="Köttbullar" loading="lazy" />
+        <img className="side-img" src={`${PREFIX}/images/DSC00352-HDR.webp`} alt="K&#246;ttbullar" loading="lazy" />
       </section>
 
       {/* CTA Banner */}
       <section className="cta-banner">
         <div className="hero-bg">
-          <img src="/images/DSC00497.webp" alt="Restaurang interiör" loading="lazy" />
+          <img src={`${PREFIX}/images/DSC00497.webp`} alt="Restaurang interi&#246;r" loading="lazy" />
         </div>
         <div className="hero-overlay" />
         <div className="cta-banner-content">
